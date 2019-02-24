@@ -1,5 +1,8 @@
-package khd;  
+package khd;
 
+import org.springframework.stereotype.Component;
+
+@Component("sony")
 public class SonySpeaker implements Speaker{     //최상위의 Speaker를 interface로 구현하고 implements 함	
 	public SonySpeaker() {
 		System.out.println("==> SonySpeaker 객체 생성");

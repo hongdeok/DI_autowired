@@ -1,10 +1,11 @@
 package khd;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class TVUser {
-
+@Autowired
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -14,11 +15,7 @@ public class TVUser {
 		TV tv = (TV)factory.getBean("tv");
 		tv.powerOn();
 		tv.powerOff();
-		
-		Speaker sp = (Speaker)factory.getBean("apple");
-		sp.volumeUp();
-		sp.volumeDown();
-		
+
 		factory.close();
 	}
 
